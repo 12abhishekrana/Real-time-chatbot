@@ -1,0 +1,160 @@
+body {
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+  background: linear-gradient(135deg, #1f1c2c, #928dab);
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+}
+
+#app {
+  display: flex;
+  width: 90%;
+  height: 90vh;
+  border-radius: 15px;
+  overflow: hidden;
+  box-shadow: 0 8px 25px rgba(0,0,0,0.5);
+  background: rgba(30, 30, 46, 0.85);
+  backdrop-filter: blur(12px);
+}
+
+/* Sidebar */
+#sidebar {
+  width: 25%;
+  background: rgba(20, 20, 35, 0.9);
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+#sidebar h2 {
+  margin: 0 0 15px;
+  text-align: center;
+  font-weight: 700;
+  color: #00ffe7;
+}
+
+#username {
+  width: 100%;
+  padding: 12px;
+  border-radius: 8px;
+  border: none;
+  outline: none;
+  font-size: 14px;
+}
+
+#users-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  overflow-y: auto;
+  max-height: 60vh;
+}
+
+#users-list li {
+  padding: 8px;
+  margin: 5px 0;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 6px;
+  font-size: 14px;
+  color: #00ffe7;
+}
+
+/* Main Chat */
+#main {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  background: rgba(15, 15, 25, 0.9);
+}
+
+#chat-box {
+  flex: 1;
+  padding: 20px;
+  overflow-y: auto;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Messages */
+#chat-box p {
+  margin: 6px 0;
+  padding: 10px 15px;
+  border-radius: 15px;
+  max-width: 70%;
+  word-wrap: break-word;
+  position: relative;
+}
+
+#chat-box p.self {
+  background: rgba(0, 255, 231, 0.2);
+  align-self: flex-end;
+}
+
+#chat-box p.other {
+  background: rgba(255, 255, 255, 0.1);
+  align-self: flex-start;
+}
+
+#chat-box p .time {
+  font-size: 10px;
+  color: #aaa;
+  margin-left: 8px;
+}
+
+/* Notifications */
+#chat-box p.notification {
+  text-align: center;
+  font-style: italic;
+  color: #bbb;
+  background: none;
+}
+
+/* Input Area */
+#input-area {
+  display: flex;
+  padding: 15px;
+  background: rgba(25, 25, 40, 0.95);
+  border-top: 1px solid #333;
+}
+
+#message {
+  flex: 1;
+  padding: 12px;
+  border-radius: 8px;
+  border: none;
+  outline: none;
+  font-size: 14px;
+  margin-right: 10px;
+}
+
+.file-btn {
+  background: #00ffe7;
+  color: #000;
+  font-size: 18px;
+  padding: 10px;
+  margin-right: 8px;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+button {
+  background: #00ffe7;
+  border: none;
+  padding: 12px 18px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 18px;
+  font-weight: bold;
+  color: #000;
+}
+
+button:hover, .file-btn:hover {
+  background: #00d5c4;
+}
+
+/* Scrollbar */
+::-webkit-scrollbar { width: 8px; }
+::-webkit-scrollbar-thumb { background: #00ffe7; border-radius: 4px; }

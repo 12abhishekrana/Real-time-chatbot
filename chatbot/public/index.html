@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Real-Time Chat</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div id="app">
+    <!-- Sidebar -->
+    <div id="sidebar">
+      <h2>💬 Chat App</h2>
+      <div id="user-panel">
+        <input type="text" id="username" placeholder="Enter username & press Enter">
+      </div>
+      <h3>👥 Online</h3>
+      <ul id="users-list"></ul>
+    </div>
+
+    <!-- Main Chat -->
+    <div id="main">
+      <div id="chat-box"></div>
+      <div id="input-area">
+        <input type="text" id="message" placeholder="Type a message...">
+        <input type="file" id="fileInput" hidden>
+        <label for="fileInput" class="file-btn">📎</label>
+        <button onclick="sendMessage()">➤</button>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
